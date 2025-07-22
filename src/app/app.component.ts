@@ -13,15 +13,20 @@ import { FooterComponent } from "./components/footer/footer.component";
 
       <main class="flex-1">
 
-        <h1>Welcome to {{title}}!</h1>
         <router-outlet />
 
       </main>
-      
+
       <app-footer />
     </div>
   `,
   styles: [
+    `
+      main {
+        padding: 16px;
+      }
+      
+    `
    
   ],
 })
