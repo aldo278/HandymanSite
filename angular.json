@@ -26,7 +26,7 @@
           "options": {
             "outputPath": "dist/handyman-site",
             "baseHref": "/HandymanSite/",
-            "index": "src/index.html",
+            "index": "src/index.server.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
