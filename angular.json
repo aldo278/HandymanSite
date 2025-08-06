@@ -25,8 +25,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/handyman-site",
-            "baseHref": "/HandymanSite/",
-            "index": "src/index.server.html",
+            "baseHref": "/",
+            "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
