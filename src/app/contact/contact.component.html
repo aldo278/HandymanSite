@@ -1,12 +1,56 @@
-    <section id="contact" class="animate-fadeInUp">
-      <h3 class="text-3xl font-semibold mb-8 text-center border-b border-slate-300 pb-3">Contact Us</h3>
-      <form method="POST" action="https://formsubmit.co/miguel.avarez.jimenez@gmail.com" class="max-w-2xl mx-auto space-y-5 bg-white p-6 rounded-lg shadow-lg">
-        <input name="name" placeholder="Your Name" class="w-full border border-slate-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-        <input name="email" type="email" placeholder="Your Email" class="w-full border border-slate-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-        <input type="phone" name="phone" placeholder="Your Phone" class="w-full border border-slate-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-        <textarea name="message" rows="5" placeholder="Your Message" class="w-full border border-slate-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
-        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 w-full sm:w-auto">
-          Send Message
-        </button>
-      </form>
-    </section>
+<section id="contact" class="animate-fadeInUp py-12 px-6 md:px-12 bg-slate-50">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+
+    <!-- Left Info Panel -->
+    <div class="space-y-6">
+      <h3 class="text-3xl font-semibold text-slate-800 border-b border-slate-300 pb-3">
+        Get in Touch
+      </h3>
+      <p class="text-slate-600">
+        Have a project in mind or need a quick repair?  
+        I`m here to help — from small fixes to bigger renovations.
+      </p>
+      <div class="space-y-4">
+        <div class="flex items-center space-x-3">
+          <span class="bg-green-600 text-white w-8 h-8 flex items-center justify-center rounded-full">📍</span>
+          <span class="text-slate-700">Portland, OR</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <span class="bg-green-600 text-white w-8 h-8 flex items-center justify-center rounded-full">📞</span>
+          <a href="tel:+15035551234" class="text-slate-700 hover:underline">
+            (503) 555-1234
+          </a>
+        </div>
+        <div class="flex items-center space-x-3">
+          <span class="bg-green-600 text-white w-8 h-8 flex items-center justify-center rounded-full">⏰</span>
+          <span class="text-slate-700">Mon–Sat: 8:00 AM – 6:00 PM</span>
+        </div>
+      </div>
+      <p class="text-slate-500 italic">
+        Fully licensed & insured • Friendly, reliable service • Free quotes
+      </p>
+    </div>
+
+    <!-- Right Contact Form -->
+    <form method="POST" action="https://formsubmit.co/miguel.avarez.jimenez@gmail.com"
+          class="max-w-2xl w-full space-y-5 bg-white p-6 rounded-lg shadow-lg">
+      <input name="name" placeholder="Your Name"
+             class="w-full border border-slate-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+             required />
+      <input name="email" type="email" placeholder="Your Email"
+             class="w-full border border-slate-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+             required />
+      <input type="phone" name="phone" placeholder="Your Phone"
+             class="w-full border border-slate-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+             required />
+      <textarea name="message" rows="5" placeholder="Your Message"
+                class="w-full border border-slate-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required></textarea>
+      <button type="submit"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 w-full sm:w-auto">
+        Send Message
+      </button>
+    </form>
+    
+  </div>
+</section>
