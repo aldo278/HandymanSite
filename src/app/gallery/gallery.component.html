@@ -1,14 +1,41 @@
 <section id="gallery" class="mb-16">
-    <h3 class="text-2xl font-semibold mb-6 border-b pb-2 border-slate-300">Gallery</h3>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <img src="IMG_1001.jpg" alt="test" class="w-full h-auto rounded shadow" />
-        <img src="IMG_1290.jpg" alt="" class="w-full h-auto rounded shadow" />
-        <img src="porchBefore.jpg" alt="porchBefore" class="w-full h-auto rounded shadow" />
-        <img src="porchAfter.jpg" alt="porchAfter" class="w-full h-auto rounded shadow" />
-        <img src="KitchenBefore.jpg" alt="KitchenBefore" class="w-full h-auto rounded shadow" />
-        <img src="KitchenAfter1.jpg" alt="KitchenAfter1" class="w-full h-auto rounded shadow" />
-        <img src="KitchenAfter2.jpg" alt="KitchenAfter2" class="w-full h-auto rounded shadow" />
-        <img src="BigPorchBefore.jpg" alt="BigPorchBefore" class="w-full h-auto rounded shadow" />
-        <img src="BpAfter.jpeg" alt="BigPorchAfter" class="w-full h-auto rounded shadow" />
+  <h3 class="text-2xl font-semibold mb-6 border-b pb-2 border-slate-300">Gallery</h3>
+  <p class="text-slate-600 mb-8 max-w-2xl">
+    A showcase of recent projects completed by <span class="font-semibold">Do It Right Handyman LLC</span> in Portland, OR.
+    From small repairs to full renovations, we take pride in delivering quality results.
+  </p>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Porch Project -->
+    <div>
+      <h4 class="text-lg font-semibold mb-2">Front Porch Renovation</h4>
+      <p class="text-sm text-slate-500 mb-3">Rebuilt and refinished the porch for improved safety, durability, and curb appeal.</p>
+      <app-carousel 
+        [images]="['porchBefore.jpg', 'porchAfter.jpg']" 
+        [altTexts]="['Porch Before', 'Porch After']">
+      </app-carousel>
     </div>
+
+    <!-- Kitchen Project -->
+    <div>
+      <h4 class="text-lg font-semibold mb-2">Kitchen Remodel</h4>
+      <p class="text-sm text-slate-500 mb-3">A complete transformation including cabinetry, counters, and modern fixtures.</p>
+      <app-carousel 
+        [images]="['KitchenBefore.jpg', 'KitchenAfter1.jpg', 'KitchenAfter2.jpg']" 
+        [altTexts]="['Kitchen Before', 'Kitchen After 1', 'Kitchen After 2']">
+      </app-carousel>
+    </div>
+
+    <!-- Big Porch Project -->
+    <div>
+      <h4 class="text-lg font-semibold mb-2">Large Deck Upgrade</h4>
+      <p class="text-sm text-slate-500 mb-3">Expanded and reinforced the structure, with a fresh stain for a new look.</p>
+      <app-carousel 
+        [images]="['BigPorchBefore.jpg', 'BpAfter.jpeg']" 
+        [altTexts]="['Big Porch Before', 'Big Porch After']">
+      </app-carousel>
+    </div>
+
+  </div>
 </section>
