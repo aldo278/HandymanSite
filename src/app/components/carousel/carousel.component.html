@@ -5,7 +5,6 @@
     class="w-full h-auto rounded shadow transition-all duration-300"
   />
 
-  <!-- Controls -->
   <button (click)="prev()" 
     class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white px-2 py-1 rounded-full hover:bg-black/70">
     ‹
@@ -15,7 +14,6 @@
     ›
   </button>
 
-  <!-- Dots -->
   <div class="flex justify-center gap-2 mt-2">
     <span *ngFor="let img of images; let i = index"
       (click)="currentIndex = i"
