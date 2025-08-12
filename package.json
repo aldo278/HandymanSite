@@ -4,13 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:HandymanSite": "node dist/handyman-site/server/server.mjs",
     "build:ssr": "ng build && ng run HandymanSite:server",
     "serve:ssr": "node dist/server/main.js",
-    "dev:ssr": "ng run HandymanSite:serve-ssr"
+    "dev:ssr": "ng run HandymanSite:serve-ssr",
+    "build": "ng build --configuration production",
+    "sitemap": "node generate-sitemap.js",
+    "build-with-sitemap": "ng build --configuration production && npm run sitemap"
   },
   "private": true,
   "dependencies": {
