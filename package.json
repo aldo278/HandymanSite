@@ -8,11 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:HandymanSite": "node dist/handyman-site/server/server.mjs",
-
     "build:ssr": "ng build && ng run HandymanSite:server",
     "serve:ssr": "node dist/server/main.js",
     "dev:ssr": "ng run HandymanSite:serve-ssr"
-    
   },
   "private": true,
   "dependencies": {
@@ -27,6 +25,7 @@
     "@angular/ssr": "^19.2.14",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
+    "sitemap": "^8.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },

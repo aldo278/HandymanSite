@@ -1,5 +1,5 @@
 export const homeMetaData = {
-  title: 'Trusted Local Handyman in Portland, OR, and Surrounding Areas | 10+ Years Experience',
+  title: 'Do It Right Handyman LLC | Local Handyman Services in Oregon',
   description:
     'Offering expert handyman services in Portland, OR and surrounding areas. Fully licensed, insured, affordable rates, and flexible scheduling. Shoot us a message for a free quote today!',
   keywords: [
